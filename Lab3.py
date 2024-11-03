@@ -16,6 +16,7 @@ def calculate_frequency(dict_):
     for key in dict_:
         dict_[key] /= total_sum
         dict_[key] = round(dict_[key],2)
+        print(key + ':', dict_[key])
 
     return dict_
 
@@ -54,5 +55,5 @@ main_str = """
 Под ним сидел, и кот учёный
 Свои мне сказки говорил.
 """
-sorted_letters = calculate_frequency(count_letters(main_str))
-print(sorted_letters)
+
+calculate_frequency(count_letters(main_str))
